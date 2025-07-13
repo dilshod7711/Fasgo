@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("./static/Montserrat-Regular.ttf");
+    font-style: normal;
+}
+body {
+    background-color: #E9F4F9;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 240px;
+}
+@media (max-width: 393px) {
+    .container {
+        gap: 20px;
+         margin: 0 auto;
+         
+    }
+
+}
+@media (max-width: 393px) {
+    .links {
+        display: none;
+
+    }
+
+}
+@media (max-width: 393px) {
+    .Banner {
+        max-width: 373px;
+    }
+    
+
+}
+
+header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9F4F9;
+   
+}
+.links {
+    display: flex;
+    gap: 50px;
+}
+.links a {
+    color: #0CC0DF;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+
+}   
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.header-right button {
+    background-color: #0CC0DF;
+    padding: 8px 20px ;
+    color: #FFFFFF;
+    border-radius: 20px 10px 20px 10px;
+    border: none;
+    font-style: italic;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.Banner-text{
+    position: relative;
+}
+.Banner-text img {
+    position: absolute;
+    top: 120px;
+   left: -80px;
+}
+
+.Banner{
+    background: linear-gradient(#00ACCA,#00F97D);
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 50px;
+    height: 500px;
+    border-radius: 80px 40px 80px 40px;
+    display: flex;
+    padding: 0px 70px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.Banner-text span {
+    color: #A471D8;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    font-style: italic;
+}
+.Banner-text button {
+  background-color: #FFFFFF;
+    padding: 10px 16px ;
+    color: #00F97D;
+    border-radius: 20px 10px 20px 10px;
+    border: none;
+    font-style: italic;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+}
+.Banner-text h2 {
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    font-style: italic;
+    margin: 20px 0;
+    max-width: 622px;
+    margin-top: -30px;
+    text-align: start;
+}
+.Banner-text p {
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    font-style: Medium;
+    margin: 20px 0px;
+}
+.Banner-img {
+    position:relative;
+
+}
+.Banner-img .imgs {
+    position:absolute;
+    top: -240px;
+    left: -580px;;
+}
+.Banner-img .cover {
+    position:absolute;
+    top: -149px;
+    left: -500px;
+    width: 479px;
+}
+.Banner-img .ornament {
+    position:absolute;
+    top: -250px;
+    left: -170px;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 100px 0;
+
+}
+.Banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Banner-title h3{
+font-size: 40px;
+font-family: "Montserrat";
+font-weight: 700;
+font-style: italic;
+color: #00F97D;
+margin: 20px 0;
+}
+.Banner-title p{
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #A471D8;
+    max-width: 1000px;
+    text-align: center;
+}
+.Banner-title span{
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #A471D8;
+}
+.Banner-title-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 38px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: semibold;
+    color: #0CC0DF;
+    margin: 20px 0;
+    max-width: 538px;
+}
+.content p {
+    font-size: 22px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: Medium;
+    color:#A471D8;
+    margin: 20px 0;
+    list-style: 32px;
+    letter-spacing: -1%;
+    max-width: 712px;
+}
+.content-text-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0; 
+}
+.content {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+max-width: 1380px;
+margin: 0 auto;
+padding: 0 15px;
+height: 600px;
+background-color: #FFFFFF;
+border-radius: 80px 40px 80px 40px;
+padding: 50px 50px;
+margin-top: 100px;
+}
+.content-img {
+    position: relative;
+}
+.ellipse {
+    position: absolute;
+    top: 57px;
+    left: 167px;
+    border-radius: 0px 0px 80px 0px;
+}
+.content-text {
+    position: relative;
+}
+.ellipse2 {
+    position: absolute;
+    top: -106px;
+    left: -50px;
+    border-radius: 80px 0px 0px 0px;
+}
+.cantent-card1 {
+  max-width: 423px;
+  height: 117px;
+  border-radius: 36px 18px 36px 18px;
+  background-color: #FFFFFF;
+  box-shadow: #80A3CD33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 20px 0;
+  gap: 40px;
+  position: absolute;
+  top: 120px;
+  left: 180px;
+  border: 1px solid #dcf5fb;
+
+}
+.cantent-card1 h6 {
+    color: #19082A;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    font-style: semibold;
+
+}
+.cantent-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px;
+    height: 50px;
+    border-radius: 30px 15px 30px 15px;
+    background-color: #E6FBFF;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.cantent-card1 span  {
+    color: #0CC0DF;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    font-style: semibold;
+} 
+.cantent-card2 {
+    max-width: 170px;
+    height: 224px;
+    background-color: #FFFFFF;
+    box-shadow: #80A3CD40;
+    padding: 12px;
+    border-radius: 24px 12px 24px 12px;
+    position: absolute;
+    top: 300px;
+    left: 160px;
+    border: 1px solid #dcf5fb;
+    
+
+
+}
+.cantent-card2  h6 {
+    color: #19082A;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    font-style: semibold;
+}
+.cantent-card2 span {
+    color: #0CC0DF;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    font-style: semibold;
+}
+.cantent-card2-btn {
+   
+    width: 100%;
+    max-width:146px;
+    height: 30px;
+    border-radius: 24px 12px 24px 12px;
+    padding: 12px;
+    background-color: #E6FBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+.Faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.Faq-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin:0 auto;
+    border-bottom: 1px solid #706A75; 
+    padding: 20px 0;
+   
+}
+.Faq-text {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+margin: 0 auto;
+flex-direction: column;
+max-width: 1000px;
+
+
+}
+.Faq-text h2 {
+    color: #00F97D;
+    font-family: "Montserrat";
+font-size: 40px;
+line-height: 100%;
+font-weight: 700;
+font-style: italic;
+text-align: center;
+margin: 100px 0px;
+}
+
+
+.Faq-card-text span {
+ max-width: 500px;
+color:#706A75;
+font-family: "Montserrat";
+font-size: 18px;
+line-height: 24px;
+font-weight: 400;
+font-style: Regular;
+
+}
+.Faq-card-text h3 {
+color:#19082A;
+font-family: "Montserrat";
+font-size: 22px;
+line-height: 24px;
+font-weight: 500;
+font-style: Medium;
+
+
+}
+.Faq-card-img {
+   margin-left: -20px;
+}
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;  
+    max-width: 1440px;
+    
+ 
+}
+.Socials h2 {
+    color: #00F97D;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: 70px 0;
+}
+
+.forms-card {
+    max-width: 680px;
+    height: 300px;
+    width: 100%;
+    border-radius: 80px 40px 80px 40px ;
+    background: linear-gradient(#00ACCA,#00F97D);
+    padding: 50px 30px;
+    position: relative;
+}
+.forms-card {
+    max-width: 680px;
+    width: 100%;
+    height: 300px;
+    border-radius: 80px 40px 80px 40px ;
+    background: linear-gradient(#00ACCA,#00F97D);
+}
+.forms-card h3 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: italic;
+    font-family: "Montserrat";
+    margin: 30px 0;
+}
+.forms-card p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: Regular;
+    font-family: "Montserrat";
+    max-width: 448px;
+}
+.forms-card button {
+    background-color: #FFFFFF;
+    padding: 10px 24px ;
+    color: #0CC0DF;
+    border-radius: 50px 30px 50px 30px;
+    border: none;
+    margin-top: 20px;
+}
+.restarount {
+    position: absolute;
+    top: 120px;
+    left: 485px;
+}
+.forms-ellipse {
+    position: absolute;
+    top: 0px;
+    left: 450px;
+}
+.Social {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.Socials-card {
+    max-width: 313px;
+    height: 100px;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 40px 20px 40px 20px ;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.Socials-cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+}
+.Socials-card-text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.Socials-cards p {
+    color: #19082A;
+    font-size: 22px;
+    line-height: 24px;
+    font-style: Medium;
+    font-weight: 500;
+    font-family: "Montserrat";
+
+}
+.Socials-cards span {
+    color: #706A75;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: Regular;
+    font-weight: 400;
+    font-family: "Montserrat";
+
+}
+.footer {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1380px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 80px 40px 80px 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   margin-top: 100px;
+
+}
+.elips1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 80px 0px 80px 0px;
+}
+.elips2 {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    border-radius: 0px 0px 80px 0px
+}
+.footer-logo span {
+  color: #A471D8;
+  font-size: 30px;
+  font-style: simibold;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 50px;
+} 
+.footer-logo-img {
+   margin-left: 270px;
+}
+.footer-logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.footer-logo p {
+    color: #A471D8;
+    font-size: 22px;
+    font-style: Medium;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 32px;
+    text-align: center;
+    max-width: 690px;
+    margin: 20px 0;
+  } 
+  .footer-logo a{
+    color: #A471D8;
+    font-size: 20px;
+    font-style: Medium;
+    font-weight: 400;
+    font-family: "Regular";
+    line-height: 32px;
+    text-align: center;
+  } 
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
