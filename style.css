@@ -335,7 +335,7 @@ body {
     height: 120px !important;
     position: absolute !important;
     top: 160px !important;
-    left: 260px !important;
+    left: 200px !important;
    }
    .Socials h2 {
     font-size: 24px !important;
@@ -373,6 +373,7 @@ body {
     position: absolute !important;
     margin-top: 130px !important;
     width: 200px;
+    display: none !important;
    }
    .footer-logo-img {
     display: flex !important;
