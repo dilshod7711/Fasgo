@@ -52,9 +52,13 @@ padding: 20px 20px !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 20px;
+        padding: 50px 50px !important;
         position: relative !important;
     }
+body {
+    padding: 10px 10px;
+    overflow-x: hidden;
+}
     .header-right button {
         display: none;
     }
@@ -102,9 +106,9 @@ padding: 20px 20px !important;
  .Banner-img .imgs {
  position: absolute !important;
  top: 50px !important;
- left: -80px !important;
+ left: -0px !important;
  object-fit: cover !important;
- width: 400px !important;
+ width: 350px !important;
 }
 
 
@@ -123,27 +127,83 @@ padding: 20px 20px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 100px !important;
+    gap: 50px !important;
     margin: 100px 0 !important;
     padding: 30px 30px;
+    max-width: 400px;
  }
- .logos :nth-child(2) {
+ 
+ 
+ .logos :nth-child(5) {
+    display: none !important;
+ }
+ .logos :nth-child(7) {
     display: none !important;
  }
  .logos :nth-child(1) {
     display: none !important;
  }
- .logos :nth-child(5) {
-    display: none !important;
+ .logos img {
+    width: 100% !important;
+    max-width: 50px !important;
+    height: 30px;
  }
- .logos :nth-child(6) {
-    display: none !important;
- }
-    
-    
-    
-    
+ .Banner-title h3 {
+    font-size: 24px !important;
+    text-align: center !important;
 
+ }
+ .Banner-title p,span {
+    font-size: 12px !important;
+    text-align: center !important;
+    
+ }
+ .Banner-title-img img {
+    max-width: 120px !important;
+    height: 120px !important;
+    width: 100%;
+ }
+ .Banner-title-img {
+    flex-wrap: wrap !important;
+
+ }
+    
+  .content {
+    max-width: 440px !important;
+    height: 1078px !important;
+    border-radius: 30px 15px 30px 15px !important;
+    flex-direction: column !important;
+
+  } 
+  .content-text h2 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  } 
+  .content-text p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+   
+  } 
+  .content-text {
+    margin-top: 150px !important;
+  }
+  .content-text-img {
+    flex-direction: column !important;
+  }
+  .iphone {
+    max-width:373px !important;
+    height: 600px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+  }
+  .content-text.ellipse2 {
+    display: none !important;
+  }
 }
 
 header {
