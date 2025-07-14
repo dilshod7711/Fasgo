@@ -5,6 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
+body {
+    overflow-x: hidden;
+  }
 @font-face {
     font-family: "Montserrat";
     src: url("./static/Montserrat-Regular.ttf");
@@ -22,7 +25,7 @@ body {
     align-items: center;
     gap: 240px;
 }
-@media (max-width: 393px) {
+@media (max-width: 480px) {
     .container {
        display: flex !important;
    justify-content: center !important;
@@ -32,18 +35,20 @@ padding: 20px 20px !important;
     }
 
 }
-@media (max-width: 393px) {
+@media (max-width: 480px) {
     .links a {
         display: none;
 
     }
 }
-@media (max-width: 393px) {
+@media (max-width: 480px) {
     .Banner {
-        width: 373px !important;
-        height: 700px !important;
+    width: 100% !important;
+    max-width: 393px;
+    margin: 0 auto !important;
+        height: 680px !important;
         display: flex;
-        border-radius: none;
+        border-radius: 30px !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -78,24 +83,65 @@ padding: 20px 20px !important;
        margin: 0 auto !important;
     }
    .Banner-img {
-       display: flex !important;
-       justify-content: center !important;
-       align-items: center !important;
-       margin: 0 auto !important;
-       margin-top: -300px !important;
-       position: absolute !important;
-       top: 750px;
-       left: 520px;
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    width: 100%;
    }
    .Banner-img .cover {
-    max-width: 330px !important;
-    height: 350px !important;
+    position: static !important; 
+    max-width: 100% !important;
+    height: auto !important;
     object-fit: contain !important;
-   }
-   .Banner-img .ornament {
-    display: none;
-   }
- 
+    width: 329px !important;
+    height: 350px !important;
+    
+}
+ .Banner-img .imgs {
+ position: absolute !important;
+ top: 50px !important;
+ left: -80px !important;
+ object-fit: cover !important;
+ width: 400px !important;
+}
+
+
+
+.Banner-img .ornament {
+  display: none; 
+}
+.Banner-tex {
+    position: relative !important;
+}
+.ornament2 {
+  position: absolute !important;
+  top: 410px !important;
+}
+ .logos {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 100px !important;
+    margin: 100px 0 !important;
+    padding: 30px 30px;
+ }
+ .logos :nth-child(2) {
+    display: none !important;
+ }
+ .logos :nth-child(1) {
+    display: none !important;
+ }
+ .logos :nth-child(5) {
+    display: none !important;
+ }
+ .logos :nth-child(6) {
+    display: none !important;
+ }
+    
+    
+    
     
 
 }
