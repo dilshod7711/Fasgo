@@ -98,7 +98,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 20px auto 0;
-    width: 100%;
+    /* width: 100%; */
+    width: 340px;
+    margin-left: -40px;
    }
    .Banner-img .cover {
     position: static !important; 
