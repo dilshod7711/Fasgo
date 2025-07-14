@@ -97,10 +97,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 0;
+    margin: 20px auto 0 !important;
     /* width: 100%; */
-    width: 330px;
-    margin-left: -40px;
+    margin: 0 auto !important;
+    width: 330px !important;
+    margin-left: -30px !important;
    }
    .Banner-img .cover {
     position: static !important; 
